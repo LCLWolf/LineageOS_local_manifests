@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
- <project path="device/asus/grouper" name="lineageos_android_device_asus_grouper" remote="aaopt" revision="cm-14.1" groups="device,grouper" />
- <project path="kernel/asus/grouper" name="android_kernel_asus_grouper" remote="ads" revision="ads-7.1.0" />
+ <project path="device/asus/grouper" name="lineageos_android_device_asus_grouper" remote="MR" revision="cm-14.1" groups="device,grouper" />
+ <project path="kernel/asus/grouper" name="lineageos_android_kernel_asus_grouper" remote="MR" revision="ads-7.1.0" />
+
+ <remove-project name="LineageOS/android_bootable_recovery" />
+ <project name="Team-Win-Recovery-Project" path="bootable/recovery" remote="MR" revision="7.1-mrom-wk" />
+ <project name="multirom" path="system/extras/multirom" remote="MR" revision="master" />
+ <project name="kexec-tools" path="system/extras/multirom/kexec-tools" remote="MR" revision="master" />
+ <project name="multirom_adbd" path="system/extras/multirom/adbd" remote="MR" revision="master" />
+ <project name="libbootimg" path="system/extras/libbootimg" remote="MR" revision="master" />
+ <project name="android_device_common_version-info" path="device/common/version-info" remote="MR" revision="master" />
+     <copyfile src="mr-build.sh" dest="mr-build.sh" />
 
  <remove-project name="LineageOS/android_external_libnfc-nxp" />
  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="aaopt" revision="cm-14.1" groups="pdk" />   
