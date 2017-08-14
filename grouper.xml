@@ -5,7 +5,7 @@
  <project path="kernel/asus/grouper" name="lineageos_android_kernel_asus_grouper" remote="MR" revision="wk-7.1.0" />
 
  <remove-project name="LineageOS/android_bootable_recovery" />
- <project name="Team-Win-Recovery-Project" path="bootable/recovery" remote="MR" revision="7.1-mrom-wk" />
+ <project name="Team-Win-Recovery-Project" path="bootable/recovery" remote="MR" revision="wk-7.1-mrom" />
  <project name="multirom" path="system/extras/multirom" remote="MR" revision="master" />
  <project name="kexec-tools" path="system/extras/multirom/kexec-tools" remote="MR" revision="master" />
  <project name="multirom_adbd" path="system/extras/multirom/adbd" remote="MR" revision="master" />
