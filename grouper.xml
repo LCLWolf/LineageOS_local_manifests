@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
- <project path="device/asus/grouper" name="lineageos_android_device_asus_grouper" remote="MR" revision="wk-14.1" groups="device,grouper" />
- <project path="kernel/asus/grouper" name="lineageos_android_kernel_asus_grouper" remote="MR" revision="wk-7.1.0" />
+ <project path="device/asus/grouper" name="linos_android_device_asus_grouper" remote="MR" revision="wk-14.1" groups="device,grouper" />
+ <project path="kernel/asus/grouper" name="linos_android_kernel_asus_grouper" remote="MR" revision="wk-7.1.0" />
 
  <remove-project name="LineageOS/android_bootable_recovery" />
  <project name="Team-Win-Recovery-Project" path="bootable/recovery" remote="MR" revision="wk-7.1-mrom" />
