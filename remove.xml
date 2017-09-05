@@ -9,7 +9,6 @@ doesn't quite fit.
 
   -->
   
-  <remove-project name="LineageOS/android_packages_apps_Exchange" />
-  <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
+  <remove-project name="android_bootable_recovery" />
 
 </manifest>
