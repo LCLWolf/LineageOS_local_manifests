@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-<project path="device/asus/grouper" name="linos_android_device_asus_grouper" remote="MR" revision="wk-14.1" groups="device,grouper" />
-<project path="kernel/asus/grouper" name="linos_android_kernel_asus_grouper" remote="MR" revision="wk-7.1.0" />
-<!-- 
-<project path="device/asus/grouper" name="android_device_asus_grouper-1" remote="MR" revision="cm-14.1" groups="device,grouper" />
-<project path="kernel/asus/grouper" name="android_kernel_asus_grouper-1" remote="MR" revision="cm-14.1" />
--->
- 
-<remove-project name="LineageOS/android_bootable_recovery" />
-<project name="Team-Win-Recovery-Project" path="bootable/recovery" remote="MR" revision="wk-7.1-mrom" />
-<!-- busybox needed for twrp -->
-<project path="external/busybox" name="LineageOS/android_external_busybox" />
-
-         <project name="multirom" path="system/extras/multirom" remote="MR" revision="master" />
-<project name="kexec-tools" path="system/extras/multirom/kexec-tools" remote="MR" revision="master" />
-<project name="multirom_adbd" path="system/extras/multirom/adbd" remote="MR" revision="master" />
-<project name="libbootimg" path="system/extras/libbootimg" remote="MR" revision="master" />
-<project name="android_device_common_version-info" path="device/common/version-info" remote="MR" revision="master" />
+<project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="MR" revision="wk-7.1-mrom" />
+<project path="device/asus/grouper" name="android_device_asus_grouper" remote="MR" revision="wk-14.1" groups="device,grouper" />
+<project path="kernel/asus/grouper" name="android_kernel_asus_grouper" remote="MR" revision="wk-7.1.0" />
+<project path="device/common/version-info" name="android_device_common_version-info" remote="MR" revision="master" />
     <copyfile src="mr-build.sh" dest="mr-build.sh" />
 
-<remove-project name="LineageOS/android_external_libnfc-nxp" />
-<project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="MR" revision="cm-14.1" groups="pdk" />   
+<project path="system/extras/libbootimg" name="libbootimg" remote="MR" revision="master" />
+<project path="system/extras/multirom" name="multirom" remote="MR" revision="master" />
+<project path="system/extras/multirom/kexec-tools" name="kexec-tools" remote="MR" revision="master" />
+<project path="system/extras/multirom/adbd" name="multirom_adbd" remote="MR" revision="master" />
+
 <project path="vendor/asus" name="proprietary_vendor_asus" remote="MR" revision="ads-7.0.1" />
 <project path="vendor/broadcom" name="proprietary_vendor_broadcom" remote="MR" revision="ads-7.0.1" />
 <project path="vendor/elan" name="proprietary_vendor_elan" remote="MR" revision="oct-mm" />
 <project path="vendor/invensense" name="proprietary_vendor_invensense" remote="MR" revision="ads-7.0.1" />
 <project path="vendor/nvidia" name="proprietary_vendor_nvidia" remote="MR" revision="ads-7.1.0" />
-<!-- replaced by libnfc-nxp
 <project path="vendor/nxp" name="proprietary_vendor_nxp" remote="MR" revision="ads-7.0.1" />
--->
 <project path="vendor/widevine" name="proprietary_vendor_widevine" remote="MR" revision="ads-7.1.0" />
 
 </manifest>
