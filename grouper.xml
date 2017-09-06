@@ -3,8 +3,8 @@
   
 <remove-project name="android_bootable_recovery" />
 <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="MR" revision="wk-7.1-mrom" />
-<project path="device/asus/grouper" name="android_device_asus_grouper" remote="MR" revision="wk-14.1" groups="device,grouper" />
-<project path="kernel/asus/grouper" name="android_kernel_asus_grouper" remote="MR" revision="wk-7.1.0" />
+<project path="device/asus/grouper" name="linos_android_device_asus_grouper" remote="MR" revision="wk-14.1" groups="device,grouper" />
+<project path="kernel/asus/grouper" name="linos_android_kernel_asus_grouper" remote="MR" revision="wk-7.1.0" />
 <project path="device/common/version-info" name="android_device_common_version-info" remote="MR" revision="master" />
     <copyfile src="mr-build.sh" dest="mr-build.sh" />
 
